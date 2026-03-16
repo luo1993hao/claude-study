@@ -4,7 +4,20 @@
       "Bash(git init)",
       "Bash(git add -A && git status)",
       "Bash(gh repo create claude-study --public --description \"Spring Boot 2.7 + Java 8 项目模板\" --source=. --remote=origin --push)",
-      "Bash(git add -A && git commit -m \"Update database config: claude database with new password\")"
+      "Bash(git add -A && git commit -m \"Update database config: claude database with new password\")",
+      "Bash(git push)",
+      "Bash(git config --global url.\"git@github.com:\".insteadOf \"https://github.com/\" && git push)",
+      "Bash(ssh-keygen -R github.com)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(git remote set-url origin git@github.com:luo1993hao/claude-study.git && git push)",
+      "Bash(cat ~/.ssh/known_hosts | grep -v github.com > ~/.ssh/known_hosts.tmp && mv ~/.ssh/known_hosts.tmp ~/.ssh/known_hosts && chmod 600 ~/.ssh/known_hosts)",
+      "Bash(ssh -o \"StrictHostKeyChecking no\" git@github.com)",
+      "Bash(git remote set-url origin https://github.com/luo1993hao/claude-study.git && GIT_ASKPASS=echo git push)",
+      "Bash(git config --global --remove-regexp \"url\\\\.\" \"insteadOf\" 2>/dev/null; git remote set-url origin https://github.com/luo1993hao/claude-study.git && git push)",
+      "Bash(GIT_SSH_COMMAND=\"ssh -i ~/.ssh/id_rsa -o IdentitiesOnly=yes\" git push)",
+      "Bash(gh repo sync luo1993hao/claude-study --source=. --branch=main)",
+      "Bash(gh auth refresh -h github.com)",
+      "Bash(git config --global credential.helper store && git config --global url.\"https://github.com/\".insteadOf \"ssh://\")"
     ]
   }
 }
