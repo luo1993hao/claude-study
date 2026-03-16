@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(git init)",
-      "Bash(git add -A && git status)"
+      "Bash(git add -A && git status)",
+      "Bash(gh repo create claude-study --public --description \"Spring Boot 2.7 + Java 8 项目模板\" --source=. --remote=origin --push)",
+      "Bash(git add -A && git commit -m \"Update database config: claude database with new password\")"
     ]
   }
 }
